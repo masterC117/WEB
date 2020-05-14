@@ -1,0 +1,90 @@
+@import "animation.css";
+#footwrap{
+    width: 100%;
+    min-width: 1230px;
+    padding: 45px 0;
+    background-color: #e3e2e2;
+    color: #9f9378;
+    font-size: 12px;
+    line-height: 24px;
+    clear: both;
+}
+#footwrap a{
+    color: #9f9378;
+}
+#footwrap a:hover{
+    text-decoration: underline;
+}
+#footwrap-outside{
+    max-width: 1358px;
+    min-width: 1230px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+#footwrap-inside{
+    background-color: #e3e2e2;
+}
+#footwrap-main{
+    padding: 15px 20px;
+}
+#footwrap-icon{
+    display: block!important;
+    height: 100px;
+    width: auto;
+    line-height: 100px;
+    font-size: 0;
+    text-align: left;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    margin-top: -50px;
+}
+.footwrap-a1{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 24px 0 8px;
+    background-image: url("../images/topfoot-spr.png");
+    background-position: -216px 0;
+    width: 189px;
+    height: 34px;
+}
+.footwrap-a1:hover{
+    filter:  hue-rotate(190deg);
+    -webkit-filter:  hue-rotate(190deg);
+}
+.footwrap-a2{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 24px 0 8px;
+    background-image: url("../images/topfoot-spr.png");
+    background-size: 405px 178px;
+    background-repeat: no-repeat;
+    background-position: -216px -84px;
+    width: 82px;
+    height: 28px;
+    float: none;
+}
+.footwrap-a2:hover{
+    filter:  hue-rotate(185deg) drop-shadow(2px 2px 10px rgba(0,0,0,.5));
+    -webkit-filter:  hue-rotate(185deg) drop-shadow(2px 2px 3px rgba(0,0,0,.5));
+
+
+
+}
+#footwrap-link{
+    width: 750px;
+    margin-left: 500px;
+    display: inline;
+    float: right;
+    list-style: none;
+}
+#footwrap-link>li{
+    line-height: 20px;
+    overflow: hidden;
+    color: #9f9378;
+}
+.link-divide{
+    font-size: 12px;
+}

@@ -1,0 +1,276 @@
+@import "animation.css";
+#head{
+    width: 100%;
+    height: 78px;
+    overflow: visible;
+    top: 0;
+    left: 0;
+    z-index: 12;
+    position: absolute;
+    transition: background-color 0.6s;
+}
+
+#head-normal{
+    width: 100%;
+    height: 78px;
+    position: relative;
+    margin: 0 auto;
+    z-index: 10;
+    max-width: 1358px;
+    min-width: 1230px;
+}
+
+#head-logo{
+    width: 167px;
+    height: 60px;
+    float: left;
+    margin-top: 10px;
+}
+#head-nav{
+    width: 55%;
+    height: 78px;
+    float: left;
+    box-sizing: border-box;
+    margin-left: 30px;
+    padding-top: 16px;
+}
+
+#head-nav>li{
+    list-style: none;
+    float: left;
+    width: 20%;
+    height: 78px;
+    text-align: center;
+}
+#head-nav>li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.head-nav-title{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.head-nav-alt{
+    display: block;
+    color: #aeaeae;
+    font-size: 11px;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+#head-userinfo{
+    float: right;
+    width: 244px;
+    height: 78px;
+    position: relative;
+    z-index: 3;
+}
+#head-userinfo-img{
+    float: left;
+    width: 48px;
+    height: 50px;
+    position: relative;
+    margin-top: 18px;
+    line-height: 48px;
+    text-align: center;
+    font-size: 0;
+}
+#head-userinfo-img>img{
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    border-radius: 50%;
+}
+#head-userinfo-img-href{
+    display: block;
+    width: 48px;
+    height: 50px;
+    background-image: url("../images/topfoot-spr.png");
+    background-position: -216px -115px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: -8px;
+}
+#head-userinfo-text{
+    float: left;
+    margin-left: 10px;
+}
+#head-userinfo-text>p{
+    color: #fefefe;
+    font-size: 16px;
+    line-height: 78px;
+}
+#head-userinfo-text>p>a{
+    color: #fff3d0;
+}
+#client-dl{
+    float: right;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin: 17px 31px 0 0;
+    -webkit-transition: filter .3s;
+    transition: filter .3s;
+    filter: brightness(1);
+    -webkit-filter: brightness(1);
+}
+#client-dl:hover{
+    filter: brightness(1.5);
+    -webkit-filter: brightness(1.5);
+}
+#client-dl>a{
+    display: inline-block;
+    width: 16px;
+    height: 24px;
+    background-image: url("../images/topfoot-spr.png");
+    background-size: 405px 178px;
+    background-repeat: no-repeat;
+    background-position: -303px -84px;
+    vertical-align: middle;
+}
+#client-hover{
+    width: 211px;
+    height: 178px;
+    position: absolute;
+    top: 68px;
+    right: 190px;
+    display: none;
+    background-image: url("../images/topfoot-spr.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 405px 178px;
+    overflow: hidden;
+}
+#client-hover-i{
+    display: block;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    line-height: 117px;
+    background-color: #fff;
+    margin: 22px auto 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#client-hover-p{
+    color: #cdbe91;
+    font-size: 12px;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}
+#client-hover-img1{
+    display: inline-block;
+    vertical-align: middle;
+    width: 110px;
+    height: 110px;
+    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    border-radius: 5px;
+}
+#client-hover-img2{
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+#search{
+    float: right;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin: 17px 31px 0 0;
+
+}
+#search>a{
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background-image: url("../images/topfoot-spr.png");
+    background-size: 405px 178px;
+    background-repeat: no-repeat;
+    background-position: -381px -39px;
+    vertical-align: middle;
+    -webkit-transition: filter .3s;
+    transition: filter .3s;
+    filter: brightness(1);
+    -webkit-filter: brightness(1);
+}
+#search>a:hover{
+    filter: brightness(1.5);
+    -webkit-filter: brightness(1.5);
+}
+
+#head-subnav{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    background: rgba(0,0,0,.5);
+    padding: 88px 0 32px 35px;
+    animation: subnavShow .4s;
+    -webkit-animation: subnavShow .4s;
+}
+#head-subnav-outside{
+    width: 100%;
+    max-width: 1358px;
+    min-width: 1230px;
+    height: auto;
+    margin: 0 auto;
+}
+#subnav-ul{
+    width: 55%;
+    overflow: hidden;
+    margin-left: 161px;
+}
+.subnav-li{
+    width: 20%;
+    float: left;
+    height: auto;
+    overflow: visible;
+}
+.subnav-a{
+    display: block;
+    width: 100%;
+    height: 29px;
+    overflow: hidden;
+    line-height: 29px;
+    color: #e1e1e1;
+    font-size: 14px;
+    text-align: center;
+}
+.subnav-a:hover{
+    color: #e9c06c;
+}
+
+.subnav-icon1{
+    width: 14px;
+    height: 14px;
+    margin: -2px 2px 0 0;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url("../images/topfoot-spr.png");
+    background-size: 405px 178px;
+    background-repeat: no-repeat;
+    background-position: -381px -65px;
+}
+.subnav-icon2{
+    width: 14px;
+    height: 14px;
+    margin: -2px 2px 0 0;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url("../images/topfoot-spr.png");
+    background-size: 405px 178px;
+    background-repeat: no-repeat;
+    background-position: -347px -84px;
+}

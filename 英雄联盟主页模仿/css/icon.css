@@ -1,0 +1,132 @@
+
+.icon-glzx{
+    display: inline-block;
+    vertical-align: middle;
+    margin: -2px 4px 0 4px;
+    background-image: url("../images/comm-spr.png");
+    background-size: 393px 200px;
+    background-repeat: no-repeat;
+    background-position: -371px -12px;
+    width: 22px;
+    height: 20px;
+}
+.icon-wxbd{
+    display: inline-block;
+    vertical-align: middle;
+    margin: -2px 4px 0 4px;
+    background-image: url("../images/comm-spr.png");
+    background-size: 393px 200px;
+    background-repeat: no-repeat;
+    background-position: -193px -46px;
+    width: 22px;
+    height: 20px;
+}
+.icon-xgzd{
+    display: inline-block;
+    vertical-align: middle;
+    margin: -2px 4px 0 4px;
+    background-image: url("../images/comm-spr.png");
+    background-size: 393px 200px;
+    background-repeat: no-repeat;
+    background-position: -316px -12px;
+    width: 22px;
+    height: 20px;
+}
+.icon-yxyz{
+    display: inline-block;
+    vertical-align: middle;
+    margin: -2px 4px 0 4px;
+    background-image: url("../images/comm-spr.png");
+    background-size: 393px 200px;
+    background-repeat: no-repeat;
+    background-position: -274px -46px;
+    width: 22px;
+    height: 20px;
+}
+.icon-zxdt{
+    display: inline-block;
+    vertical-align: middle;
+    margin: -2px 4px 0 4px;
+    background-image: url("../images/comm-spr.png");
+    background-size: 393px 200px;
+    background-repeat: no-repeat;
+    background-position: -219px -72px;
+    width: 22px;
+    height: 20px;
+}
+.icon-zxkf{
+    display: inline-block;
+    vertical-align: middle;
+    margin: -2px 4px 0 4px;
+    background-image: url("../images/comm-spr.png");
+    background-size: 393px 200px;
+    background-repeat: no-repeat;
+    background-position: -316px -12px;
+    width: 22px;
+    height: 20px;
+}
+.icon-yxzl{
+    display: inline-block;
+    vertical-align: middle;
+    margin: -2px 4px 0 4px;
+    background-image: url("../images/comm-spr.png");
+    background-size: 393px 200px;
+    background-repeat: no-repeat;
+    background-position: -343px -12px;
+    width: 22px;
+    height: 20px;
+}
+.icon-ydzy{
+    display: inline-block;
+    vertical-align: middle;
+    margin: -2px 4px 0 4px;
+    background-image: url("../images/comm-spr.png");
+    background-size: 393px 200px;
+    background-repeat: no-repeat;
+    background-position: -280px -125px;
+    width: 22px;
+    height: 20px;
+}
+.icon-lfet,.icon-right{
+    background-image: url("../images/index-spr.png");
+    background-size: 638px 572px;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 9px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: -1px 12px 0 12px;
+    opacity: .7;
+}
+.icon-lfet{
+    background-position: -531px -226px;
+}
+.icon-right{
+    background-position: -506px -226px;
+}
+.icon-more{
+    background-image: url("../images/comm-spr.png");
+    background-size: 393px 200px;
+    background-repeat: no-repeat;
+    background-position: -342px -99px;
+    width: 15px;
+    height: 9px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: -2px 0 0 5px;
+    animation: 1.5s linear infinite;
+    -webkit-animation: 1.5s linear infinite;
+}
+.icon-upward{
+    display: block;
+    background-image: url("../images/index-spr.png");
+    background-size: 638px 572px;
+    background-repeat: no-repeat;
+    background-position: -556px -226px;
+    width: 14px;
+    height: 7px;
+    position: absolute;
+    top: -7px;
+    right: 114px;
+    z-index: 10;
+}

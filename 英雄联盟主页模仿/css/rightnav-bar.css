@@ -1,0 +1,96 @@
+@import "animation.css";
+#rightnav-bar{
+    position: fixed;
+    width: 70px;
+    height: auto;
+    box-sizing: border-box;
+    padding-top: 6px;
+    overflow: hidden;
+    right: 0;
+    bottom: 18%;
+    background-color: #fff;
+    border-radius: 9px 0 0 9px;
+    -webkit-transition: right .5s .2s;
+    transition: right .5s .2s;
+    z-index: 199;
+}
+#rightnav-bar-ul{
+    margin-left: 4px;
+    height: 305px;
+    padding-bottom: 18px;
+    box-sizing: border-box;
+    -webkit-transition: height 1s .2s ease;
+    transition: height 1s .2s ease;
+}
+.rightnav-bar-li{
+    width: 66px;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 6px;
+}
+.rightnav-bar-li:hover a{
+    color: #309cac;
+    font-weight: 700;
+}
+.rightnav-bar-li span{
+    display: block;
+    width: 66px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+}
+.rightnav-bar-li:hover span{
+    animation: jump ease 1.5s 1;
+    -webkit-animation: jump ease 1.5s 1;
+}
+
+.rightnav-bar-li i{
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url("../images/comm-spr.png");
+    background-size: 393px 200px;
+    background-repeat: no-repeat;
+}
+.rightnav-bar-li a{
+    color: #92a8ab;
+    font-size: 12px;
+    text-align: center;
+}
+@keyframes jump{
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+    10% {
+        -webkit-transform: translateY(5px) scaleX(1.2) scaleY(.8);
+        transform: translateY(5px) scaleX(1.2) scaleY(.8);
+    }
+    30% {
+        -webkit-transform: translateY(-13px) scaleX(1) scaleY(1) rotateZ(5deg);
+        transform: translateY(-13px) scaleX(1) scaleY(1) rotateZ(5deg);
+    }
+    50% {
+        -webkit-transform: translateY(0) scale(1) rotateZ(0);
+        transform: translateY(0) scale(1) rotateZ(0);
+    }
+    55% {
+        -webkit-transform: translateY(0) scaleX(1.1) scaleY(.9) rotateZ(0);
+        transform: translateY(0) scaleX(1.1) scaleY(.9) rotateZ(0);
+    }
+    70% {
+        -webkit-transform: translateY(-4px) scaleX(1) scaleY(1) rotateZ(-2deg);
+        transform: translateY(-4px) scaleX(1) scaleY(1) rotateZ(-2deg);
+    }
+    80% {
+        -webkit-transform: translateY(0) scaleX(1) scaleY(1) rotateZ(0);
+        transform: translateY(0) scaleX(1) scaleY(1) rotateZ(0);
+    }
+    85% {
+        -webkit-transform: translateY(0) scaleX(1.05) scaleY(.95) rotateZ(0);
+        transform: translateY(0) scaleX(1.05) scaleY(.95) rotateZ(0);
+    }
+    100% {
+        -webkit-transform: translateY(0) scaleX(1) scaleY(1);
+        transform: translateY(0) scaleX(1) scaleY(1);
+    }
+}
