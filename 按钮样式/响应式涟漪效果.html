@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>一种响应式涟漪效果按钮样式</title>
+    <style>
+        *{
+            margin:0 auto;
+            text-decoration: none;
+        }
+        body,html{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+        }
+        #container{
+            width: 400px;
+            height: 400px;
+            position: relative;
+            margin: auto;
+            display: flex;
+        }
+        #main{
+            width: 150px;
+            height: 80px;
+            margin: auto;
+        }
+        #main-a{
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            line-height: 80px;
+            border-radius: 60px;
+            transition: color .3s cubic-bezier(0, 0, 0.2, 1),box-shadow 0.3s cubic-bezier(0, 0, 0.2, 1);
+            overflow: hidden;
+            position: relative;
+            font-size: 20px;
+            background: #53b6f3;
+            box-shadow:  5px 5px 10px #214961,
+            -5px -5px 10px #85ffff;
+            z-index: 60;
+        }
+        #main-a:hover{
+            color: white;
+            box-shadow:  5px 5px 10px #214961,
+            -5px -5px 10px #006391;
+        }
+        #main-a:hover .cover{
+            width: 400px;
+            height: 400px;
+        }
+        .cover{
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #003791;
+            transition: width .6s cubic-bezier(0, 0, 0.2, 1), height .6s cubic-bezier(0, 0, 0.2, 1);
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="main">
+            <a id="main-a" href="">
+                Hello,world!
+                <div id="cover" class="cover"></div>
+            </a>
+        </div>
+    </div>
+    <script>
+        /*获取元素*/
+        let mya = document.getElementById("main-a");
+        let cover=document.getElementById("cover");
+        /*添加监听器*/
+        mya.addEventListener( "mouseenter", function(event){
+            /*获取鼠标进入元素时瞬间鼠标的坐标，用于设置涟漪效果的产生位置*/
+            /*鼠标的坐标是相对于浏览器的，包括视窗，工具栏，会随着浏览器大小变化而变化，左上角位0，0*/
+            let x=event.clientX;
+            let y=event.clientY;
+            console.log("鼠标进入元素时相对于浏览器的坐标：",x,y);
+            /*getBoundingClientRect用于获取某个元素相对于视窗的位置集合。集合中有top, right, bottom, left等属性*/
+            let myaRect=this.getBoundingClientRect();
+            /*获取元素顶部距离视窗（viewport）的垂直距离*/
+            let myaTop=myaRect.top;
+            /*获取元素距离视窗（viewport）左边的水平距离*/
+            let myaLeft=myaRect.left;
+            /*获取鼠标进入时的位置相对于元素的坐标，并将其设置成覆盖元素的产生位置*/
+            cover.style.left=x-myaLeft+"px";
+            cover.style.top =y-myaTop+"px";
+        });
+        /*鼠标离开时过程与进入时类似*/
+        mya.addEventListener( "mouseleave", function(event){
+            let x=event.clientX;
+            let y=event.clientY;
+            console.log("鼠标离开元素时相对于浏览器的坐标：",x,y);
+            let myaRect=this.getBoundingClientRect();
+            let myaTop=myaRect.top;
+            let myaLeft=myaRect.left;
+            cover.style.left=x-myaLeft+"px";
+            cover.style.top =y-myaTop+"px";
+        });
+    </script>
+</body>
+</html>
