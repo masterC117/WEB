@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>冷光效果</title>
+    <style>
+        *{
+            margin: 0 auto;
+            padding: 0;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            background: #000;
+        }
+        #container{
+            width: 800px;
+            height: 800px;
+            margin: auto;
+            display: flex;
+        }
+        #btn-1,#btn-2{
+            width: 220px;
+            height: 80px;
+            margin: auto;
+            border-radius: 50px;
+            color: #fff;
+            line-height: 80px;
+            text-align: center;
+            text-decoration: none;
+            letter-spacing: 2px;
+            position: relative;
+            transition: font-size .4s;
+        }
+        #btn-1{
+            background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+            background-size: 300%;
+        }
+        #btn-2{
+            background: linear-gradient(90deg,#fa7199,#f5ce62,#e43603,#fa7199);
+            background-size: 300%;
+        }
+        #btn-1:before,#btn-2:before{
+            content: "";
+            position: absolute;
+            background: inherit;
+            border-radius: 50px;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            filter: blur(20px);
+            transition: opacity .4s;
+            opacity: 0;
+        }
+        #btn-1:hover:before,
+        #btn-2:hover:before{
+            opacity: 1;
+            z-index: -1;
+        }
+        #btn-1:hover,
+        #btn-2:hover{
+            -webkit-animation: glow 8s infinite;
+            -o-animation: glow 6s infinite;
+            animation: glow 6s infinite;
+            z-index: 1;
+            font-size: 20px;
+        }
+        @keyframes glow {
+            0%{
+                background-position: 0;
+            }
+            100%{
+                background-position: 400%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <a id="btn-1" href="javascript:void(0)">HELLO</a>
+        <a id="btn-2" href="javascript:void(0)">WORLD</a>
+    </div>
+</body>
+</html>
